@@ -1,0 +1,123 @@
+.FollowerCard {
+  width: 100%;
+  border-radius: 0.7rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+.FollowerCard > span:nth-of-type(1) {
+  display: none;
+}
+
+.follower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follower > div {
+  display: flex;
+  gap: 10px;
+}
+
+.followerImg {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name > span:nth-of-type(1) {
+  font-weight: bold;
+  cursor: pointer;
+}
+.ps-button {
+  height: 2rem;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+@media screen and (max-width: 62.4375rem) {
+  .FollowerCard {
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 11px;
+    box-sizing: border-box;
+  }
+  .follower {
+    justify-content: space-around;
+  }
+  .follower > div {
+    gap: 5px;
+  }
+  .followerImg {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .fc-button {
+    height: 2rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+  }
+}
+@media screen and (max-width: 20rem) {
+  .FollowerCard > span {
+    display: flex;
+    align-self: center;
+    border: 1px solid lightblue;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .FollowerCard > h3 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 41.0625rem) {
+  .FollowerCard > span {
+    display: flex;
+    align-self: center;
+    border: 1px solid lightblue;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .FollowerCard > h3 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .follower {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 43.75rem) {
+  .FollowerCard > span:nth-of-type(1) {
+    display: block;
+  }
+  .FollowerCard > span {
+    display: flex;
+    align-self: center;
+    border: 1px solid lightblue;
+    padding: 4px;
+    cursor: pointer;
+  }
+  .FollowerCard > h3 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 37.5rem) {
+  .FollowerCard > span:nth-of-type(1) {
+    display: block;
+  }
+}

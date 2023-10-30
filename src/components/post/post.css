@@ -1,0 +1,108 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--cardColor);
+  border-radius: 16px;
+  gap: 1rem;
+}
+.post > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.postreact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.postreact > img:hover {
+  cursor: pointer;
+}
+.profileUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileUser > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.profileUser > div > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profileUser > div > div:nth-of-type(1) {
+  width: 3.2rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.profileUser > div > div img:nth-of-type(1) {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.profileUser > div > div > span:nth-of-type(1) {
+  align-self: flex-start;
+  cursor: pointer;
+}
+.profileUser > img:nth-of-type(1) {
+  width: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 62.4375rem) {
+  .post {
+    padding: 0.8rem;
+    gap: 0.7rem;
+  }
+  .postreact {
+    gap: 0.5rem;
+  }
+  .profileUser > div > div:nth-of-type(1) {
+    width: 2.2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  .profileUser > div > div > span:nth-of-type(1) {
+    font-size: 14px;
+  }
+  .profileUser > img:nth-of-type(1) {
+    width: 20px;
+    cursor: pointer;
+  }
+  .postreact > img {
+    width: 22px;
+  }
+  .post > div > span {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 53.125rem) {
+  .post > div > span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 20rem) {
+  .profileUser > div > div > span:nth-of-type(1) {
+    font-size: 11px;
+  }
+  .profileUser > div > div > small:nth-of-type(1) {
+    font-size: 10px;
+  }
+  .profileUser > img:nth-of-type(1) {
+    width: 13px;
+  }
+  .postreact > img {
+    width: 18px;
+  }
+  .post > div > span {
+    font-size: 12px;
+  }
+  .span1 {
+    font-size: 11px;
+  }
+}

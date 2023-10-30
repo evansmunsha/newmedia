@@ -1,0 +1,186 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.forminfo > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  margin: 1rem 0 1rem;
+  width: 100%;
+}
+.forminfo > div:nth-of-type(5) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: var(--inputColor);
+  border-radius: 8px;
+  padding: 25px;
+  flex: 1;
+}
+.UpdatesButton {
+  display: inline;
+  align-self: flex-end;
+  width: 30%;
+}
+
+@media (max-width: 64rem) {
+  .UpdatesButton {
+    display: inline;
+    align-self: flex-end;
+    width: 30%;
+  }
+}
+@media (max-width: 60rem) {
+  .mantine-Paper-root,
+  .mantine-Modal-modal,
+  .mantine-5rr5mu {
+    width: 80%;
+    padding: 0.8rem;
+  }
+  .input {
+    width: 100%;
+    padding: 20px 5px;
+  }
+  .UpdatesButton {
+    display: inline;
+    align-self: flex-end;
+    width: 30%;
+  }
+}
+@media (max-width: 41.125rem) {
+  .mantine-Paper-root,
+  .mantine-Modal-modal,
+  .mantine-5rr5mu {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .input {
+    width: 100%;
+    padding: 22px 5px;
+  }
+  .UpdatesButton {
+    display: inline;
+    align-self: flex-end;
+    width: 30%;
+  }
+
+  .forminfo > div > span {
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .forminfo > div > span > input {
+    font-size: 11px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 37.5rem) {
+  .mantine-Paper-root,
+  .mantine-Modal-modal,
+  .mantine-5rr5mu {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .input {
+    width: 100%;
+    padding: 22px 5px;
+  }
+  .UpdatesButton {
+    display: inline;
+    align-self: flex-end;
+    width: 30%;
+  }
+
+  .forminfo > div > span {
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .forminfo > div > span > input {
+    font-size: 11px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 20rem) {
+  .mantine-Paper-root,
+  .mantine-Modal-modal,
+  .mantine-5rr5mu {
+    width: 100%;
+    padding: 0.2rem;
+  }
+  .mantine-121w2fi,
+  .mantine-Modal-header {
+    width: 100%;
+  }
+  /**/
+
+  .form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .forminfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.7rem;
+  }
+  .forminfo > div {
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  .forminfo > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+  }
+  .forminfo > div:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+  }
+  .forminfo > div:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+  }
+  .forminfo > div > span {
+    font-size: 13px;
+  }
+  .forminfo > div > span > input {
+    font-size: 11px;
+  }
+  .forminfo > div {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 0.7rem;
+  }
+  .input {
+    width: 100%;
+    padding: 12px 5px;
+  }
+  .UpdatesButton {
+    display: flex;
+    align-self: center;
+    width: 90%;
+  }
+}

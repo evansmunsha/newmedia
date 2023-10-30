@@ -1,0 +1,137 @@
+.rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.navicons {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.navicons > div > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.navicons > div svg {
+  cursor: pointer;
+}
+.r-button {
+  height: 3rem;
+  width: 80%;
+  align-self: center;
+}
+@media screen and (max-width: 62.4375rem) {
+  .rightside {
+    gap: 1rem;
+  }
+  .navicons > div > img {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .navicons > div > svg {
+    cursor: pointer;
+    width: 20px;
+  }
+  .r-button {
+    height: 2rem;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 53.125rem) {
+  .Home {
+    grid-template-columns: 1fr 3fr 0.4fr;
+    gap: 0.7rem;
+  }
+
+  .navicons > div img {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 1rem;
+    transform: rotate(-90deg);
+    width: 40px;
+    height: 40px;
+  }
+  .navicons {
+    flex-direction: column;
+    margin: 0;
+    gap: 2rem;
+  }
+  .navicons > div img {
+    transform: rotate(0deg);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .navicons > div svg {
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+  }
+  .navicons > div {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+  .navicons > div:nth-of-type(1) {
+    margin-top: 1rem;
+  }
+  .r-button {
+    margin-top: 20px;
+    height: 2rem;
+    width: 90%;
+  }
+}
+@media (max-width: 20rem) {
+  .navicons {
+    flex-direction: row;
+    margin: 0;
+    gap: 2rem;
+  }
+  .navicons > div img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .navicons > div:nth-of-type(1) {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 41.0625rem) {
+  .navicons {
+    flex-direction: column;
+    margin: 0;
+    gap: 2rem;
+  }
+  .navicons > div img {
+    width: 25px;
+    height: 25px;
+  }
+  .navicons > div:nth-of-type(1) {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 43.75rem) {
+  .navicons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .rightside > .r-button {
+    display: none;
+  }
+}
